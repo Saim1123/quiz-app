@@ -30,6 +30,7 @@ function App() {
       </div>
       <div className="choices">
         <button
+          className="btn btn-true"
           onClick={() =>
             dispatch(
               nextQuestion(
@@ -40,12 +41,10 @@ function App() {
             )
           }
         >
-          {/* {questions[ques.currentQuestionIndex].correct_answer === "true"
-            ? questions[ques.currentQuestionIndex].correct_answer
-            : questions[ques.currentQuestionIndex].incorrect_answer} */}
           true
         </button>
         <button
+          className="btn btn-false"
           onClick={() =>
             dispatch(
               nextQuestion(
@@ -57,9 +56,6 @@ function App() {
             )
           }
         >
-          {/* {questions[ques.currentQuestionIndex].incorrect_answer === "false"
-            ? questions[ques.currentQuestionIndex].incorrect_answer
-            : questions[ques.currentQuestionIndex].correct_answer} */}
           false
         </button>
       </div>
